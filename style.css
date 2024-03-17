@@ -1,0 +1,144 @@
+/* Add animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    background-color: #000000; /* Set background color to black */
+    color: #ffffff; /* Set text color to white */
+    font-family: Arial, sans-serif; /* Specify font family */
+    line-height: 1.6; /* Adjust line height */
+    padding: 20px; /* Add padding */
+}
+
+
+/* Header section */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for heading */
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+#readMoreBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+nav a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Main content section */
+
+.container {
+    max-width: 800px;
+    margin: 20px auto 0; /* Adjusted margin to remove extra space */
+    padding: 40px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+
+
+/* Introduction section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin bottom for more spacing */
+}
+
+.intro h2 {
+    font-size: 2rem; /* Larger font size */
+    margin-bottom: 20px;
+    color: #343a40; /* Dark color for heading */
+}
+
+.intro p {
+    font-size: 1.2rem; /* Larger font size */
+    line-height: 1.6;
+    color: #6c757d; /* Dark color for text */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px; /* Adjusted padding for buttons */
+    background-color: #0555b0;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin:  10px; /* Adjusted margin for better spacing */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0052a3; /* Darker blue color on hover */
+    transform: translateY(-2px); /* Move button up on hover */
+}
+
+
+/* Profile picture */
+.profile-pic {
+    display: block;
+    margin: 0 auto 40px; /* Center horizontally and add margin bottom */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #090202; /* White border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Styling for HI */
+#triggerText {
+    display: inline; /* Display "HI" inline */
+    margin-right: 5px; /* Adjust spacing between "HI" and the flashing text */
+    animation: fadeInUp 1s ease; /* Apply animation to HI text */
+    color: #007bff; /* Blue color for HI text */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px; /* Increased margin top for more spacing */
+    color: #6c757d; /* Dark color for text */
+    font-size: 0.9rem;
+}
+

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chat.css">
+    link
+</head>
+<body>
+    <!-- Your website content goes here -->
+    
+
+    
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Mishra - Software Developer</title>
+    <link rel="icon" type="image/png" href="img/s logo.jpg">
+    <link rel="stylesheet" href="chat.css">   
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <style>
+     /* Add custom styles here */
+
+/* Set background color to black */
+body {
+    background-color: #090101;
+    color: #ffffff; /* Text color */
+}
+
+/* Header section */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Navigation menu */
+.navbar {
+    background-color: #323232;
+}
+
+/* Main content section */
+.container {
+    max-width: 800px;
+    margin: 2px auto 0; /* Adjusted margin to remove extra space */
+    padding: 40px;
+    background-color: #383939; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+/* Profile picture */
+.profile-pic {
+    display: block;
+    margin: 0 auto 20px; /* Center horizontally and add margin bottom */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #ffffff; /* White border around the image */
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Experience Modal */
+#experienceModal {
+    display: none; /* Hide modal by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 9999;
+    overflow: auto;
+}
+
+.modal-content {
+    margin: 15% auto;
+    background-color: #555252;
+    color: #ffffff;
+    border: 1px solid #888;
+    width: 80%;
+    animation: fadeIn 0.5s;
+}
+
+/* Modal animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Close button */
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 20px;
+}
+
+/* Section headings */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #120303; /* White color */
+}
+
+/* Text inside the intro section */
+.intro p {
+    margin-bottom: 20px;
+}
+
+/* List items */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.typewriter {
+    height: 1.6em; /* Adjust the height as needed */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    font-size: 35px;
+    margin-bottom: -1px;
+    font-style: italic;
+}
+
+#about h2 {
+    color: #ffffff; /* White color */
+}
+
+.Moreaboutme {
+    color: white;
+}
+
+.swiggy {
+    color: orange;
+}
+
+.myntra {
+    color: palevioletred;
+}
+
+.ericsson {
+    color: rgb(107, 170, 234);
+}
+
+.intel {
+    color: deepskyblue;
+}
+
+.enterprise {
+    color: aquamarine;
+}
+
+.enterprise1 {
+    color: aquamarine;
+}
+
+#video-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    background-size: cover;
+}
+
+#visitorCount {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border: 1px solid #000000;
+}
+
+/* Social Media Icons */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px; /* Adjust dimensions as needed */
+    height: 40px; /* Adjust dimensions as needed */
+    border-radius: 50%; /* To make the logos circular */
+    margin-bottom: 10px;
+}
+
+.social-media img:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+/* Navbar */
+.navbar-nav .nav-link {
+    transition: color 0.5s ease; /* Smooth transition for color change */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Brighter white color on hover */
+}
+
+.navbar {
+    background-color: #343a40; /* Dark background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Larger font size for the brand */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff; /* White color for the links */
+    font-size: 1.1rem; /* Adjust font size */
+    padding: 0.5rem 1rem; /* Increase padding for better spacing */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8f9fa; /* Slightly brighter color on hover */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* White color for the toggler icon */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* White background for the toggler icon */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.active {
+    background-color: #343a40;
+}   
+
+::selection {
+    background-color: #1f9b1f; /* Green color */
+}
+
+.intro {
+    margin-bottom: -30px;
+}
+
+/* Cursor */
+body {
+    cursor: none; /* Hide the default cursor */
+}
+
+.blurry-cursor {
+    position: fixed;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-color: rgba(17, 224, 239, 0.94); /* Adjust color and transparency */
+    border-radius: 50%;
+    pointer-events: none; /* Ensure the cursor doesn't interfere with user interactions */
+    transition: all 0.1s ease; /* Smooth movement */
+    z-index: 9999; /* Ensure it appears above other elements */
+    filter: blur(10px); /* Apply blur effect */
+}
+  /* styles.css */
+
+/* Hide the default cursor */
+body {
+    cursor: none;
+}
+
+/* Style the custom cursor */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(31, 146, 203);
+    border-radius: 50%;
+    pointer-events: none; /* Prevent cursor from affecting other elements */
+    mix-blend-mode: screen; /* Blending mode for the blur effect */
+    filter: blur(10px); /* Apply blur effect */
+    transition: transform 0.1s ease; /* Smooth movement transition */
+}
+
+    </style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<body>
+    <div class="blurry-cursor"></div>
+    <video autoplay muted loop id="video-bg">
+        <source src="img/Snow on black background render.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <header>
+        <h1>Hi, I'm Satyam Mishra</h1>
+
+        <p class="typewriter" id="typewriterText"></p>
+        
+        <p class="intro">Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving complex and challenging real-world problems.</p>
+    </header>
+    <div class="custom-cursor"></div>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/yourprofile" target="_blank"><img src="img/linkedinnn.jpeg" alt="LinkedIn"></a>
+        <a href="https://twitter.com/yourprofile" target="_blank"><img src="img/new-2023-twitter-logo-x-icon-design_1017-45418.avif" alt="Twitter"></a>
+        <a href="https://www.instagram.com/yourprofile" target="_blank"><img src="img/41e457e8599833299d563976b7d3c59a.jpg" alt="Instagram"></a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="openExperienceModalFromNavbar()">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="openProjectModalFromNavbar()">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="openSkillModalFromNavbar()">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="openEducationModalFromNavbar()">Certificate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    
+    <section class="intro about-me" id="about">
+        <!-- Content of the About Me section -->
+    </section>
+   
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="img/satyam profile].jpeg" alt="Satyam Mishra" class="profile-pic">
+            <p class="t">Hello! I'm Satyam Mishra, a self-motivated software developer with a passion for creating innovative solutions. I specialize in Java, Python, JavaScript, and various web development frameworks.</p>
+            <p class="t">I have experience in developing robust backend systems, machine learning algorithms, and web applications. My goal is to leverage technology to solve complex problems and contribute to meaningful projects.</p>
+            <button id="readMoreBtn" onclick="showAchievements()">Read More</button>
+  </div>
+
+  <div class="container" id="achievements" style="display: none;">
+    <h2 class="Moreaboutme">More About Me:</h2>
+    <p>
+        𝘼 𝙨𝙚𝙖𝙨𝙤𝙣𝙚𝙙 𝙨𝙤𝙛𝙩𝙬𝙖𝙧𝙚 𝙖𝙣𝙙 𝙬𝙚𝙗 𝙙𝙚𝙫𝙚𝙡𝙤𝙥𝙚𝙧 𝙬𝙞𝙩𝙝 𝙖 𝙧𝙤𝙗𝙪𝙨𝙩 𝙛𝙤𝙪𝙣𝙙𝙖𝙩𝙞𝙤𝙣 𝙞𝙣 𝙅𝙖𝙫𝙖, 𝘾, 𝘾#, 𝙖𝙣𝙙 𝙅𝙖𝙫𝙖𝙎𝙘𝙧𝙞𝙥𝙩. 𝙋𝙧𝙤𝙛𝙞𝙘𝙞𝙚𝙣𝙩 𝙞𝙣 𝙡𝙚𝙫𝙚𝙧𝙖𝙜𝙞𝙣𝙜 𝙛𝙧𝙖𝙢𝙚𝙬𝙤𝙧𝙠𝙨 𝙨𝙪𝙘𝙝 𝙖𝙨 𝙎𝙥𝙧𝙞𝙣𝙜, 𝙅𝙖𝙫𝙖𝙎𝙚𝙧𝙫𝙚𝙧 𝙁𝙖𝙘𝙚𝙨 (𝙅𝙎𝙁), 𝙖𝙣𝙙 𝙍𝙚𝙖𝙘𝙩𝙅𝙎 𝙩𝙤 𝙚𝙣𝙜𝙞𝙣𝙚𝙚𝙧 𝙝𝙞𝙜𝙝-𝙦𝙪𝙖𝙡𝙞𝙩𝙮, 𝙪𝙨𝙚𝙧-𝙘𝙚𝙣𝙩𝙧𝙞𝙘 𝙖𝙥𝙥𝙡𝙞𝙘𝙖𝙩𝙞𝙤𝙣𝙨. 𝙎𝙠𝙞𝙡𝙡𝙚𝙙 𝙞𝙣 𝙎𝙌𝙇 𝙛𝙤𝙧 𝙨𝙩𝙧𝙚𝙖𝙢𝙡𝙞𝙣𝙚𝙙 𝙙𝙖𝙩𝙖𝙗𝙖𝙨𝙚 𝙢𝙖𝙣𝙖𝙜𝙚𝙢𝙚𝙣𝙩. 𝘼 𝙘𝙮𝙗𝙚𝙧𝙨𝙚𝙘𝙪𝙧𝙞𝙩𝙮 𝙚𝙣𝙩𝙝𝙪𝙨𝙞𝙖𝙨𝙩 𝙬𝙞𝙩𝙝 𝙖 𝙠𝙚𝙚𝙣 𝙞𝙣𝙩𝙚𝙧𝙚𝙨𝙩 𝙞𝙣 𝙚𝙩𝙝𝙞𝙘𝙖𝙡 𝙝𝙖𝙘𝙠𝙞𝙣𝙜, 𝙄 𝙖𝙢 𝙖𝙘𝙩𝙞𝙫𝙚𝙡𝙮 𝙚𝙣𝙜𝙖𝙜𝙚𝙙 𝙞𝙣 𝙚𝙣𝙝𝙖𝙣𝙘𝙞𝙣𝙜 𝙨𝙮𝙨𝙩𝙚𝙢 𝙨𝙚𝙘𝙪𝙧𝙞𝙩𝙮 𝙖𝙣𝙙 𝙨𝙖𝙛𝙚𝙜𝙪𝙖𝙧𝙙𝙞𝙣𝙜 𝙖𝙜𝙖𝙞𝙣𝙨𝙩 𝙥𝙤𝙩𝙚𝙣𝙩𝙞𝙖𝙡 𝙩𝙝𝙧𝙚𝙖𝙩𝙨.
+<br><br>
+<b>Professional Experience:</b>
+<br><br>
+➡𝑺𝒐𝒇𝒕𝒘𝒂𝒓𝒆 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒎𝒆𝒏𝒕 𝑰𝒏𝒕𝒆𝒓𝒏@ 𝑺𝒘𝒊𝒈𝒈𝒚
+<br>
+⭐Played a pivotal role in the development of an automated order acceptance system for restaurants, ensuring adherence to quality standards and timely delivery.<br>
+⭐Collaborated with cross-functional teams to troubleshoot and resolve technical issues, leading to improved system performance.<br>
+⭐Gained practical experience in Agile software development methodologies.<br>
+<br>
+➡𝑰𝒏𝒕𝒆𝒓𝒏 @ 𝑰𝒏𝒕𝒆𝒍
+<br>
+➡𝑭𝒐𝒖𝒏𝒅𝒆𝒓, 𝑩𝒖𝒈 𝑩𝒐𝒖𝒏𝒕𝒚 𝑪𝒐𝒎𝒑𝒂𝒏𝒚
+<br>
+
+⭐Operate a successful bug bounty company, assisting multinational corporations like Google, Snapchat, and Yahoo in identifying and resolving bugs.<br>
+⭐Committed to continuous learning and skill enhancement.<br>
+<br>
+<b>Skills:</b>
+<br><br>
+⭐𝗣𝗿𝗼𝗴𝗿𝗮𝗺𝗺𝗶𝗻𝗴 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀: Java, C, C#, JavaScript, PHP
+<br>
+⭐𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸𝘀: Spring, JavaServer Faces (JSF), ReactJS<br>
+⭐𝗪𝗲𝗯 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁: HTML, CSS, JavaScript libraries<br>
+⭐𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 SQL,Cloud SQL,Amazon Relational Database Service(RDS),IBM Db2,Azure SQL Database<br>
+⭐𝗘𝘁𝗵𝗶𝗰𝗮𝗹 𝗛𝗮𝗰𝗸𝗶𝗻𝗴: Vulnerability identification, system security, threat protection.
+<br><br>
+<b>About Me:</b>
+<br>
+
+Passionate about leveraging technology to create innovative solutions, I am constantly expanding my skill set to stay up-to-date with the latest industry trends. With a strong commitment to delivering efficient and secure software solutions, I thrive in collaborative environments where I can contribute my technical expertise to drive business success.
+      </p>
+      <p>
+        <ul>
+          <li><b>Languages:</b> Python, Java, JavaScript, C, C++, HTML/CSS, Bash</li>
+          <li><b>Databases:</b> MySQL, PostgreSQL, MongoDB</li>
+          <li><b>Libraries:</b> NumPy, Pandas, OpenCV</li>
+          <li><b>Frameworks:</b> Flask, Django, Node.js, Keras, TensorFlow, PyTorch, Bootstrap, Apache Beam</li>
+          <li><b>Tools & Technologies:</b> Git, Docker, AWS, GCP, Heroku, JIRA</li>
+        </ul>
+        
+      </p>
+        
+      <!-- <p>
+        
+        Detail-oriented Software Developer with professional experience in Backend Development, Machine Learning, Computer Vision. I am adept in Python, Django, Flask, SQL, Machine Learning, Computer Vision.           
+      </p> -->
+      <p>
+        Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+      </p>
+  </div>
+</div>
+
+<!-- Experience Modal -->
+<div id="experienceModal" class="modal">
+    <div class="modal-dialog" style="max-width: 1000px;">
+        <div class="modal-content" style="background-color: #555252; color: #ffffff;">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h5 class="modal-title">Experience Details</h5>
+                <button type="button" class="btn-close close" aria-label="Close"></button>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <!-- Experience details content goes here -->
+                <ul>
+                    <li>
+                     <h3>(1).  Winner of <b class="ericsson">Ericsson Innovation Awards(Rank 2)</b>  </h3>
+                    </li>
+                    <li>
+                      Worked on three web applications targeting customers, selling vendors, and admin users; built 50+ RESTful APIs with functionalities
+      such as login/sign up, view a product, add a product to cart, checkout the order, etc.
+                    </li>
+                    <li>Improved the response time by 40% by refactoring the codebase and changing database design and queries.</li>
+                    <li>
+                      <b>Tools:</b> Python, Flask, MongoDB,MySQL,Amazon Relational Database Service(RDS)
+                      <ul><li>Jan 2020 - Jan 2020 | Mumbai,Maharashtra, India</li></ul>
+                      
+                    </li>
+                  </ul>
+
+                  <ul>
+                    <li>
+                     <h3>(2).  Intern @<b class="myntra"> Myntra</b></h3>
+                    </li>
+                    <li>
+                        Create a virtual try-on feature that allows users to visualize how clothing items would look on them before making a purchase. Utilize augmented reality (AR) technology to overlay virtual garments onto users' live video feeds or uploaded photos, enabling them to see how different styles, colors, and sizes fit their body type and personal style preferences.
+
+                    </li>
+                    <li>
+                        Implement a visual search feature that allows users to upload photos or screenshots of clothing items they like and find similar products available on Myntra's platform. Leverage image recognition technology and deep learning algorithms to analyze the visual attributes of each item and match them with relevant products from Myntra's vast inventory, streamlining the shopping experience and increasing conversion rates.
+                      </li>                    <li>
+                      <b>Tools:</b> Python, Flask, OpenCV, Keras, Tensorflow, PyTorch,Scikit<br>
+                      <ul><li>Mar 2022 - July 2022 | Bengaluru, Karnataka, India</li></ul>
+                      
+                    </li>
+                  </ul>  
+
+                  <ul>
+                    <li>
+                     <h3>(3).  Software Developer(Intern) @<b class="swiggy">SWIGGY</b></h3>
+                    </li>
+                    <li>
+                        Revolutionized Swiggy's operations with my creation of an automatic order receiving system. Merging cutting-edge tech, I streamlined order processing for heightened efficiency. This innovation showcases my commitment to propelling Swiggy to the forefront of food tech, setting a new standard for excellence.
+                      </li>
+                      <li>
+                        Created an alert system to send notifications and emails when the parameters exceed the threshold.
+                      </li>
+                      <b>Tools:</b> Python, Flask, OpenCV, Keras, Tensorflow, PyTorch,Scikit<br>
+                      <ul><li>Jan 2023 - Aug 2023 | Delhi, India</li></ul>
+                      
+                    </li>
+                  </ul>  
+
+
+                  <ul>
+                    <li>
+                     <h3>(4).Program Manager @<b class="intel">Intel</b></h3>
+                    </li>
+                    <li>
+                        Dive into my dynamic internship at Intel, where I immersed myself in Universal Verification Methodology (UVM), tackled the intricacies of CDC, and dabbled in PHP Frameworks and C#. Grateful for the invaluable experience.
+                    </li>
+                      <li>
+                        As a Program Manager at Intel, I am passionate about leading cross-functional teams to deliver cutting-edge solutions. My strategic vision and hands-on leadership style help me optimize processes and foster collaboration. With a proven track record of successfully steering programs from inception to completion.
+                    </li>
+                      <b>Tools:</b> PHP, C# ,Python, Scikit-learn, NLTK,
+                      Team Management,
+                      Problem Solving,
+                      Team Leadership,
+                      Teamwork<br>
+                      <ul><li>Aug 2023 - Present | Bengaluru, Karnataka, India</li></ul>
+                      
+                    </li>
+                  </ul>  
+
+            </div>
+        </div>
+    </div>
+
+</div>
+        </section>
+
+        <!-- Add other sections (Experience, Projects, Skills, Education, Contact) here -->
+        <div id="projectModal" class="modal">
+            <div class="modal-dialog" style="max-width: 1000px;" >
+                <div class="modal-content" style="background-color: #555252; color: #ffffff;">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Project Details</h5>
+                        <button type="button" class="btn-close close" aria-label="Close"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Project details content goes here -->
+                        <h3 class="enterprise">(1).Enterprise-level web application:</h3>
+                        <p>The enterprise-level web application project is a comprehensive endeavor aimed at developing a robust digital platform to address the intricate requirements of a large-scale organization. It involves integrating various business processes, departments, and stakeholders into a cohesive system. Key features include secure user authentication, scalability, data management, third-party system integration, compliance, and user-friendly interfaces. Technologies like Java, Python, Spring Boot, React.js, and cloud services such as AWS are commonly utilized. The project lifecycle encompasses requirements analysis, design, development, testing, deployment, and ongoing maintenance. Success hinges on effective collaboration, meticulous planning, and adherence to best practices in software engineering. The ultimate objective is to deliver a solution that optimizes organizational efficiency, productivity, and decision-making capabilities while ensuring security and compliance with industry regulations.</p>
+                        Tools:</b> 
+                        <li>CRM:Salesforce,Zoho</li>
+                        <li>Project Management Tool:JIRA.</li>
+                        <li>Enterprise Resource Planning (ERP) System:SAP,Oracal.</li>
+                        <li>Financial Management Tools:Xero,NetSuit.</li>
+                        <li>Human Resources Management System (HRMS):Workday,BambooHR</li>
+                    </div>
+                    <!-- Modal Footer (optional) -->
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div> -->
+                    <div class="modal-body">
+                        <!-- Project details content goes here -->
+                        <h3 class="enterprise1">(2).Built Own Compiler:</h3>
+                        <p>The Custom Compiler for Java,Python,C,C++ Language is a personal project aimed at building a compiler from scratch. Inspired by my passion for language processing and software development, I am excited to delve into the intricacies of code translation.</p>
+                        Compiler Construction::</b> 
+                        <li>Lexical Analyzer Generator:Lex</li>
+                        <li>Parser Generator:Biscon</li>
+                        <li>Code Generation Tools:LLVM</li>
+                        <li>Optimization Tools:GCC</li>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="skillModal" class="modal">
+            <div class="modal-dialog" style="max-width: 1000px;" >
+                <div class="modal-content" style="background-color: #555252; color: #ffffff;">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Skills</h5>
+                        <button type="button" class="btn-close close" aria-label="Close"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Project details content goes here -->
+                        <h3 class="enterprise">SKILLS:</h3>
+                        <li>Languages: Python, Java, JavaScript, C, C++, HTML/CSS, Bash</li>
+                        <li>Databases: MySQL, PostgreSQL, MongoDB</li>
+                        <li>Libraries: NumPy, Pandas, OpenCV</li>
+                        <li>Frameworks:Flask, Django, Node.js, Keras, TensorFlow, PyTorch, Bootstrap, Apache Beam</li>
+                        <li>Tools & Technologies:Git, Docker, AWS, GCP, Heroku, JIRA</li>
+                        
+                    </div>
+                    <!-- Modal Footer (optional) -->
+                    <!-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div> -->
+                    <div class="modal-body">
+                        <!-- Project details content goes here -->
+                        <h3 class="enterprise1">HOBBY:</h3>
+
+                        <li>Travelling</li>
+                        <li>Blogging</li>
+                        <li>Content Writting</li>
+                        <li>Cooking</li>
+                        <li>Planting</li>
+                        <li>Outdoor Activity</li>
+                        <li>Reading Books</li>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="educationModal" class="modal">
+            <div class="modal-dialog" style="max-width: 1000px;" >
+                <div class="modal-content" style="background-color: #555252; color: #ffffff;">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Certificate</h5>
+                        <button type="button" class="btn-close close" aria-label="Close"></button>
+                    </div>
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Project details content goes here -->
+                        <h3 class="enterprise">Certificates:</h3>
+                        <li>MIT Professional Education Introduction to Quantum
+                            computing</li>
+                        <li>Blockchain INSEAD(COURSERA)</li>
+                        <li>Data Structure And Algorithms (SCALER)</li>
+                        <li>IOS App Development(Swift)</li>
+                        <li>Ethical Hacking (Codecademy)</li>
+                        <li>Certificate Program in "Data Science & Machine Learning" (IITD)</li>
+                        <li>Advance ,AIML with Python (IITD)</li>
+                        <li>Computer System Security(IITD)</li>
+                        <li>MERN Stack Developer(CETPA)</li>
+                        <li>AWS Certification(Professional)</li>
+                        
+                    </div>
+                    <!-- Modal Footer (optional) -->
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Modal -->
+        <div id="contactModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact</h5>
+                        <button type="button" class="btn-close close" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="contactForm" method="post" action="send_email.php">
+                            <!-- Your form fields go here -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label">Mobile Number</label>
+                                <input type="text" class="form-control" id="mobile" name="mobile" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    
+
+
+      </section>
+        
+    <footer class="text-center py-4">
+        <p>© 2024 Satyam Mishra</p>
+        <p><a href="https://drive.google.com/file/d/1wYJ9Ygwi1JulzpYyYPj4HR4u6MQSpRu3/view?usp=sharing" download class="btn btn-outline-light">Download Resume</a></p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JavaScript -->
+    <script>
+        // JavaScript to toggle the flashing text
+        window.onload = function() {
+            var flashingText = document.querySelector(".blink");
+            var textArray = ["I am a Software Developer", "I am passionate about coding"];
+            var index = 0;
+
+            setInterval(function() {
+                flashingText.textContent = textArray[index];
+                index = (index + 1) % textArray.length;
+            }, 1000); // Change flashing interval here (in milliseconds)
+        };
+        const textArray = ["A Software Developer", "I love Coding", "A Fast Learner","A Bug Bounter","Ethical Hacker","International Master @ Codeforces","6 ⭐ CodeChef Maestro","Selected for GSOC(Drop Offer)","Program Manager @ Intel Corporation"];
+        let index = 0;
+        let letterIndex = 0;
+        let typingInterval;
+        function typeWriter() {
+            if (letterIndex < textArray[index].length) {
+                document.getElementById("typewriterText").innerHTML += textArray[index].charAt(letterIndex);
+                letterIndex++;
+                typingInterval = setTimeout(typeWriter, 80);
+            } else {
+                // Pause before erasing text
+                setTimeout(eraseText, 1000);
+            }
+        }
+
+        function eraseText() {
+            if (letterIndex >= 0) {
+                const currentText = textArray[index];
+                document.getElementById("typewriterText").innerHTML = currentText.substring(0, letterIndex - 1);
+                letterIndex--;
+                typingInterval = setTimeout(eraseText, 50);
+            } else {
+                // Move to the next text
+                index = (index + 1) % textArray.length;
+                typeWriter();
+            }
+        }
+        function showAchievements() {
+            var achievementsSection = document.getElementById("achievements");
+            if (achievementsSection.style.display === "none") {
+                achievementsSection.style.display = "block";
+            } else {
+                achievementsSection.style.display = "none";
+            }
+        }
+        // Start the typing animation
+        window.onload = typeWriter;
+        function openExperienceModalFromNavbar() {
+            var modal = document.getElementById("experienceModal");
+            modal.style.display = "block";
+        
+            var closeButton = modal.querySelector(".close");
+            closeButton.classList.add("white-close");
+        
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+        }
+        
+
+
+        // Attach scrollToExperience function to the Experience link in the navbar
+        var experienceLink = document.querySelector('a[href="#experience"]');
+        if (experienceLink) {
+            experienceLink.addEventListener('click', scrollToExperience);
+        } 
+        
+        // Function to open experience modal
+        function openExperienceModal() {
+            // Get the modal element
+            var modal = document.getElementById("experienceModal");
+    
+            // Display the modal
+            modal.style.display = "block";
+    
+            // Change the color of the close button to white
+            var closeButton = modal.querySelector(".close");
+            closeButton.classList.add("white-close");
+    
+            // Close the modal when clicking on the close button
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+        }
+        document.querySelector('#experience').addEventListener('click', function() {
+            document.getElementById('experienceModal').style.display = 'block';
+        });
+
+        // Hide the modal when clicking on the close button or outside of the modal
+        document.querySelectorAll('.close, #experienceModal').forEach(function(elem) {
+            elem.addEventListener('click', function(event) {
+                if (event.target === this || event.target.classList.contains('close')) {
+                    document.getElementById('experienceModal').style.display = 'none';
+                }
+            });
+        });
+
+        function openProjectModalFromNavbar() {
+            var modal = document.getElementById("projectModal");
+            modal.style.display = "block";
+        
+            var closeButton = modal.querySelector(".close");
+            closeButton.classList.add("white-close");
+        
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+        }
+        
+        function openSkillModalFromNavbar() {
+            var modal = document.getElementById("skillModal");
+            modal.style.display = "block";
+        
+            var closeButton = modal.querySelector(".close");
+            closeButton.classList.add("white-close");
+        
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+        }
+        function openEducationModalFromNavbar() {
+            var modal = document.getElementById("educationModal");
+            modal.style.display = "block";
+        
+            var closeButton = modal.querySelector(".close");
+            closeButton.classList.add("white-close");
+        
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+        }
+       
+       
+        function openContactModalFromNavbar() {
+            var modal = document.getElementById("contactModal"); // Corrected ID
+            modal.style.display = "block";
+        
+            var closeButton = modal.querySelector(".close");
+            closeButton.classList.add("white-close");
+        
+            closeButton.addEventListener("click", function() {
+                modal.style.display = "none";
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var form = document.getElementById('contactForm');
+            var responseModal = document.getElementById('responseModal');
+            var responseText = document.getElementById('responseText');
+        
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+        
+                var formData = new FormData(form);
+        
+                fetch('send_email.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    responseText.textContent = data;
+                    responseModal.style.display = 'block';
+                    form.reset(); // Clear form fields
+                })
+                .catch(error => console.error('Error:', error));
+            });
+        
+            // Close the modal when the close button is clicked
+            var closeButton = document.querySelector('.close');
+            closeButton.addEventListener('click', function() {
+                responseModal.style.display = 'none';
+            });
+        });
+        
+       
+            function openContactModalFromNavbar() {
+                var myModal = new bootstrap.Modal(document.getElementById('contactModal'));
+                myModal.show();
+            }
+        
+            document.addEventListener("mousemove", function(event) {
+                console.log("Mouse moved!"); // Check if this message is logged when moving the mouse
+                var cursor = document.querySelector('.blurry-cursor');
+                var mouseX = event.clientX;
+                var mouseY = event.clientY;
+                cursor.style.left = (mouseX - cursor.offsetWidth / 2) + 'px';
+                cursor.style.top = (mouseY - cursor.offsetHeight / 2) + 'px';
+            });
+            
+ 
+          // script.js
+
+const customCursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+    // Update the position of the custom cursor
+    customCursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+});
+   
+          
+               
+    </script>
+    <script
+        src="https://app.wonderchat.io/scripts/wonderchat.js"
+        data-name="wonderchat"
+        data-address="app.wonderchat.io"
+        data-id="cltbtvwip0bi4mv22zbmxf3i9"
+        data-widget-size="normal"
+        data-widget-button-size="normal"
+        defer
+    ></script>
+
+    <script>
+        function updateVisitorCount() {
+            let count = localStorage.getItem('visitorCount') || 0; // Initialize to 0 if not found
+            count = parseInt(count) + 1; // Increment the count
+    
+            // Update the visitor count in localStorage
+            localStorage.setItem('visitorCount', count);
+    
+            // Update the HTML element with the visitor count
+            document.getElementById('visitorCount').innerText = count;
+        }
+    
+        // Call the function to update and display the visitor count when the page loads
+        updateVisitorCount();
+        $(document).ready(function () {
+            // Get current URL path and assign 'active' class
+            var pathname = window.location.pathname;
+            $('.nav-link').removeClass('active');
+            $('.nav-link[href="' + pathname + '"]').addClass('active');
+        });
+    </script>
+    
+
+   
+<script src="chat.js"></script>
+</body>
+</html>

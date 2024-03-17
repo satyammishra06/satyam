@@ -1,0 +1,23 @@
+/* styles.css */
+body {
+    cursor: none; /* Hide the default cursor */
+}
+
+.blurry-cursor {
+    position: fixed;
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    background-color: rgba(243, 242, 242, 0.94); /* Adjust color and transparency */
+    border-radius: 50%;
+    pointer-events: none; /* Ensure the cursor doesn't interfere with user interactions */
+    transition: all 0.1s ease; /* Smooth movement */
+    z-index: 9999; /* Ensure it appears above other elements */
+    filter: blur(10px); /* Apply blur effect */
+    /* Additional styles for the cursor */
+    /* Example styles: */
+    /* background-image: url('path_to_image.png'); */
+    /* border: 2px solid red; */
+    /* box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); */
+    /* etc. */
+}
+

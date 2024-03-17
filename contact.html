@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #060616;
+            color: #fff;
+            overflow: hidden; /* Ensure the video stays behind the content */
+        }
+
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the video is behind other content */
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1; /* Ensure the video is behind other content */
+        }
+
+        .form-container {
+            position: relative;
+            z-index: 1; /* Ensure the form is above the video */
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 50px; /* Adjust top margin for better spacing */
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 16px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: #fafbfb; /* Change the placeholder color */
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #5bd183;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 20px;
+            border: none;
+            background-color: #5bd183;
+            color: #fff;
+            cursor: pointer;
+            font-size: 22px;
+            transition: opacity 0.3s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+        #preloder {
+            background-color:black; /* Semi-transparent black background */
+            position: fixed; /* Fixed position to cover the entire viewport */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: 9999; /* Ensure the preloader appears above other elements */
+            display: flex; /* Flexbox for centering */
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Style for the preloader image */
+        #preloder img {
+            width: 300px; /* Adjust the width as needed */
+        }
+    </style>
+</head>
+<body>
+    <div id="preloder">
+        <!-- Add the preloader image -->
+        <img src="img/preloder.gif" alt="Preloader">
+    </div>
+  <!-- <div class="video-container">
+        <video autoplay muted loop>
+            <source src="img/pexels-daniel-torobekov-15456435 (720p).mp4" type="video/mp4">  // replace with the vedio file you wanted to place
+        </video>
+    </div> --> 
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <!-- Content to be animated -->
+        <div class="form-container">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <h1>Contact Form</h1>
+                <input type="hidden" name="access_key" value="f5a913f0-e4e5-4180-b766-434b472c622c">
+                <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+                <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+                <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+                <textarea rows="5" name="message" placeholder="Enter text" autocomplete="off" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Hide the preloader after 5 seconds
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var preloader = document.getElementById('preloder');
+                if (preloader) {
+                    preloader.style.display = 'none';
+                }
+            }, 5000); // 5000 milliseconds = 5 seconds
+        });
+    </script>
+</body>
+</html>
